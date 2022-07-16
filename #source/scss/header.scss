@@ -1,0 +1,121 @@
+//====================================================================================================
+.header {
+	height: 152px;
+	padding: 12px 0px;
+	&__row {
+		width: 1140px;
+		margin: 0 auto;
+		@include flexbox();
+		justify-content: space-between;
+	}
+	&__column {
+		padding: 10px 20px;
+	}
+}
+.header-left {
+	width: 33.1%;
+	&__row {
+	}
+	&__logo {
+		margin: 10px 0 0;
+		max-height: 50px;
+		position: relative;
+		img{
+			width: 100%;
+		}
+	}
+	&__logo-subtext{
+		margin: 17px 10px 10px 10px;
+		font-size: 16px;
+	}
+}
+.header-right {
+	width: 41.66%;
+	&__row {
+		float: right;
+		margin-right: 10px;
+		@include flexbox();
+	}
+	&__number {
+		margin: 10px 0 10px;
+		font-size: 36px;
+		font-weight: 300;
+		line-height: 1.3em;
+
+	}
+	&__callback {
+		display: inline-block;
+		margin-right: 20px;
+		font-size: 14px;
+		background-color: #5bbd72;
+		color: #fff;
+		position: relative;
+		border-radius: 5px;
+		i {
+			padding-left: 17.5px;
+    		font-size: 21px;
+    		display: inline-block;
+    		vertical-align: middle;
+		}
+		span{
+			display: inline-block;
+			padding: 10px 25px 10px 12.5px;
+			vertical-align: middle;
+		}
+		&:hover{
+			background-color: #52aa67;
+		}
+		&:active{
+			background-color: #49975b;
+		}
+	}
+	&__lang-ru {
+		margin: 0 4px;
+		display: inline-block;
+		height: 30px;
+		img {
+			height: 100%;
+		}
+		&:hover{
+			opacity: .6;
+		}
+	}
+	&__lang-br {
+		margin-left: 12px;
+		display: inline-block;
+		height: 30px;
+		img {
+			height: 100%;
+		}
+		&:hover{
+			opacity: .6;
+		}
+
+	}
+}
+
+
+//====================================================================================================
+/*
+	Стиль иконки бургера
+	.icon-menu{
+		display: block;
+		position: absolute;
+		top: 18px;
+		right: 10px;
+		width:30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span{@include anim(0.3s,0s);top: 8px;left: 0px;position: absolute;width: 100%;height: 2px;background-color: #000;
+			&:first-child{top: 0px;}
+			&:last-child{top: auto;bottom: 0px;}
+		}
+		&.active{
+			span{@include scale(0);
+				&:first-child{@include rotate(-45deg);top: 8px;}
+				&:last-child{@include rotate(45deg);bottom: 8px;}
+			}
+		}
+	}
+*/
