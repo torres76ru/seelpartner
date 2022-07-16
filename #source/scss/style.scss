@@ -1001,7 +1001,7 @@ html::-webkit-scrollbar {
     &::-webkit-scrollbar {
 		width: 0;
 	}
-	&.open {
+	&.active {
 		opacity: 1;
 		visibility: visible;
 		.popup__content {

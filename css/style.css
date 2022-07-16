@@ -1565,12 +1565,12 @@ html::-webkit-scrollbar {
   width: 0;
 }
 
-.popup.open {
+.popup.active {
   opacity: 1;
   visibility: visible;
 }
 
-.popup.open .popup__body {
+.popup.active .popup__body {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
